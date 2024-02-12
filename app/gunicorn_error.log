@@ -1,0 +1,78 @@
+[2024-02-02 21:25:48 +0530] [388700] [INFO] Starting gunicorn 21.2.0
+[2024-02-02 21:25:48 +0530] [388700] [INFO] Listening at: http://0.0.0.0:5000 (388700)
+[2024-02-02 21:25:48 +0530] [388700] [INFO] Using worker: sync
+[2024-02-02 21:25:48 +0530] [388701] [INFO] Booting worker with pid: 388701
+[2024-02-02 21:25:48 +0530] [388702] [INFO] Booting worker with pid: 388702
+[2024-02-02 21:25:48 +0530] [388703] [INFO] Booting worker with pid: 388703
+[2024-02-02 21:25:48 +0530] [388704] [INFO] Booting worker with pid: 388704
+[2024-02-02 21:27:32 +0530] [388700] [INFO] Handling signal: int
+[2024-02-02 21:27:32 +0530] [388702] [INFO] Worker exiting (pid: 388702)
+[2024-02-02 21:27:32 +0530] [388704] [INFO] Worker exiting (pid: 388704)
+[2024-02-02 21:27:32 +0530] [388703] [INFO] Worker exiting (pid: 388703)
+[2024-02-02 21:27:32 +0530] [388701] [INFO] Worker exiting (pid: 388701)
+[2024-02-02 21:27:32 +0530] [388700] [INFO] Shutting down: Master
+[2024-02-02 21:27:33 +0530] [389694] [INFO] Starting gunicorn 21.2.0
+[2024-02-02 21:27:33 +0530] [389694] [INFO] Listening at: http://0.0.0.0:5000 (389694)
+[2024-02-02 21:27:33 +0530] [389694] [INFO] Using worker: sync
+[2024-02-02 21:27:33 +0530] [389695] [INFO] Booting worker with pid: 389695
+[2024-02-02 21:27:33 +0530] [389696] [INFO] Booting worker with pid: 389696
+[2024-02-02 21:27:34 +0530] [389697] [INFO] Booting worker with pid: 389697
+[2024-02-02 21:27:34 +0530] [389698] [INFO] Booting worker with pid: 389698
+[2024-02-02 21:32:01 +0530] [389694] [INFO] Handling signal: int
+[2024-02-02 21:32:01 +0530] [389695] [INFO] Worker exiting (pid: 389695)
+[2024-02-02 21:32:01 +0530] [389696] [INFO] Worker exiting (pid: 389696)
+[2024-02-02 21:32:01 +0530] [389697] [INFO] Worker exiting (pid: 389697)
+[2024-02-02 21:32:01 +0530] [389698] [INFO] Worker exiting (pid: 389698)
+[2024-02-02 21:32:01 +0530] [389694] [INFO] Shutting down: Master
+[2024-02-02 21:33:10 +0530] [392436] [INFO] Starting gunicorn 21.2.0
+[2024-02-02 21:33:10 +0530] [392436] [INFO] Listening at: http://0.0.0.0:5000 (392436)
+[2024-02-02 21:33:10 +0530] [392436] [INFO] Using worker: sync
+[2024-02-02 21:33:10 +0530] [392437] [INFO] Booting worker with pid: 392437
+[2024-02-02 21:33:10 +0530] [392438] [INFO] Booting worker with pid: 392438
+[2024-02-02 21:33:10 +0530] [392448] [INFO] Booting worker with pid: 392448
+[2024-02-02 21:33:10 +0530] [392449] [INFO] Booting worker with pid: 392449
+[2024-02-02 21:33:11 +0530] [392436] [INFO] Handling signal: int
+[2024-02-02 21:33:11 +0530] [392449] [INFO] Worker exiting (pid: 392449)
+[2024-02-02 21:33:11 +0530] [392437] [INFO] Worker exiting (pid: 392437)
+[2024-02-02 21:33:11 +0530] [392438] [INFO] Worker exiting (pid: 392438)
+[2024-02-02 21:33:11 +0530] [392448] [INFO] Worker exiting (pid: 392448)
+[2024-02-02 21:33:11 +0530] [392436] [INFO] Shutting down: Master
+[2024-02-02 21:33:18 +0530] [392518] [INFO] Starting gunicorn 21.2.0
+[2024-02-02 21:33:18 +0530] [392518] [INFO] Listening at: http://0.0.0.0:5000 (392518)
+[2024-02-02 21:33:18 +0530] [392518] [INFO] Using worker: sync
+[2024-02-02 21:33:18 +0530] [392519] [INFO] Booting worker with pid: 392519
+[2024-02-02 21:33:18 +0530] [392520] [INFO] Booting worker with pid: 392520
+[2024-02-02 21:33:18 +0530] [392521] [INFO] Booting worker with pid: 392521
+[2024-02-02 21:33:18 +0530] [392522] [INFO] Booting worker with pid: 392522
+[2024-02-02 21:33:39 +0530] [392518] [INFO] Handling signal: int
+[2024-02-02 21:33:39 +0530] [392521] [INFO] Worker exiting (pid: 392521)
+[2024-02-02 21:33:39 +0530] [392520] [INFO] Worker exiting (pid: 392520)
+[2024-02-02 21:33:39 +0530] [392519] [INFO] Worker exiting (pid: 392519)
+[2024-02-02 21:33:39 +0530] [392522] [INFO] Worker exiting (pid: 392522)
+[2024-02-02 21:33:39 +0530] [392518] [INFO] Shutting down: Master
+[2024-02-02 21:37:23 +0530] [394659] [INFO] Starting gunicorn 21.2.0
+[2024-02-02 21:37:23 +0530] [394659] [INFO] Listening at: http://0.0.0.0:5000 (394659)
+[2024-02-02 21:37:23 +0530] [394659] [INFO] Using worker: sync
+[2024-02-02 21:37:23 +0530] [394660] [INFO] Booting worker with pid: 394660
+[2024-02-02 21:37:23 +0530] [394662] [INFO] Booting worker with pid: 394662
+[2024-02-02 21:37:23 +0530] [394663] [INFO] Booting worker with pid: 394663
+[2024-02-02 21:37:23 +0530] [394664] [INFO] Booting worker with pid: 394664
+[2024-02-02 21:38:55 +0530] [394659] [INFO] Handling signal: int
+[2024-02-02 21:38:55 +0530] [394662] [INFO] Worker exiting (pid: 394662)
+[2024-02-02 21:38:55 +0530] [394664] [INFO] Worker exiting (pid: 394664)
+[2024-02-02 21:38:55 +0530] [394663] [INFO] Worker exiting (pid: 394663)
+[2024-02-02 21:38:55 +0530] [394660] [INFO] Worker exiting (pid: 394660)
+[2024-02-02 21:38:55 +0530] [394659] [INFO] Shutting down: Master
+[2024-02-02 21:41:53 +0530] [397126] [INFO] Starting gunicorn 21.2.0
+[2024-02-02 21:41:53 +0530] [397126] [INFO] Listening at: http://0.0.0.0:5000 (397126)
+[2024-02-02 21:41:53 +0530] [397126] [INFO] Using worker: sync
+[2024-02-02 21:41:53 +0530] [397127] [INFO] Booting worker with pid: 397127
+[2024-02-02 21:41:53 +0530] [397128] [INFO] Booting worker with pid: 397128
+[2024-02-02 21:41:53 +0530] [397129] [INFO] Booting worker with pid: 397129
+[2024-02-02 21:41:53 +0530] [397131] [INFO] Booting worker with pid: 397131
+[2024-02-02 21:42:16 +0530] [397126] [INFO] Handling signal: int
+[2024-02-02 21:42:17 +0530] [397128] [INFO] Worker exiting (pid: 397128)
+[2024-02-02 21:42:17 +0530] [397127] [INFO] Worker exiting (pid: 397127)
+[2024-02-02 21:42:17 +0530] [397131] [INFO] Worker exiting (pid: 397131)
+[2024-02-02 21:42:17 +0530] [397129] [INFO] Worker exiting (pid: 397129)
+[2024-02-02 21:42:17 +0530] [397126] [INFO] Shutting down: Master

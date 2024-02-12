@@ -1,0 +1,98 @@
+version: '3.1'
+name: 'devops_essential'
+services:
+  web:
+    image: nginx:latest
+    container_name: devops_web
+    ports:
+      - "85:80"
+    networks:
+      - mynet
+    configs:
+      - source: nginx_config
+        target: etc/nginx/conf.d/default.conf
+    volumes:
+      - nginx_logs:/var/log/nginx
+    restart: always
+    depends_on:
+      - api
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  api:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: devops_api
+    ports:
+      - 5002:5000
+    links:
+      - db
+    networks:
+      mynet:
+        ipv4_address: 172.25.0.6
+    secrets:
+      - mysql_root_password
+    restart: always
+    depends_on:
+      - db
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  db:
+    image: mysql:latest
+    container_name: devops_db
+    environment:
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/mysql_root_password
+      MYSQL_DATABASE: devops
+      MYSQL_USER: arun
+      MYSQL_PASSWORD_FILE: /run/secrets/mysql_password
+    ports:
+      - 3307:3306
+    networks:
+      mynet:
+        ipv4_address: 172.25.0.5
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database/devops.sql:/docker-entrypoint-initdb.d/devops.sql
+    secrets:
+      - mysql_root_password
+      - mysql_password
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+configs:
+  nginx_config:
+    file: ./nginx/default.conf
+
+networks:
+  webnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.24.0.0/16
+  mynet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
+
+secrets:
+  mysql_root_password:
+    file: ./secrets/mysql_root_password.txt
+  mysql_password:
+    file: ./secrets/mysql_password.txt
+
+volumes:
+  nginx_logs:
+  db_data:
